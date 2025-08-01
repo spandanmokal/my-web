@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #0e2a47;
+  padding: 1rem 0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c9a7;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: #00c9a7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #009f87;
+}
+
+.btn-outline {
+  padding: 0.6rem 1.2rem;
+  background: transparent;
+  border: 2px solid #00c9a7;
+  color: #00c9a7;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #00c9a7;
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('image.png') no-repeat center center/cover;
+  color: #fff;
+  padding: 13rem 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.features {
+  padding: 4rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 550px;
+}
+
+.courses {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.course-card {
+  flex: 1;
+  min-width: 250px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonials {
+  background: #f0f8ff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial img {
+  width: 90px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.subscribe {
+  background: #e9f5f5;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 0.7rem;
+  width: 250px;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe .btn {
+  margin-top: 1rem;
+}
+
+.footer {
+  background: #0e2a47;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer h4, .footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+.impact {
+  background: #f4f6fc;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.impact-content {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.impact-text {
+  flex: 1 1 400px;
+}
+
+.impact-text h2 {
+  font-size: 2rem;
+  color: #3956a4;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.impact-text .quote-mark {
+  font-size: 3rem;
+  color: #ccc;
+  vertical-align: top;
+}
+
+.impact-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #434343;
+}
+
+.impact-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.impact-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
